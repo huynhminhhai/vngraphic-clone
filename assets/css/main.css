@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
-        url('../fonts/Roboto-Medium.woff') format('woff');
-    font-weight: 500;
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -27,69 +27,62 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff');
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../OpenSans-Light.woff2') format('woff2'),
-        url('../OpenSans-Light.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../OpenSans-Medium.woff2') format('woff2'),
-        url('../OpenSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../OpenSans-Bold.woff2') format('woff2'),
-        url('../OpenSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../OpenSans-Regular.woff2') format('woff2'),
-        url('../OpenSans-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SFD-Medium';
-    src: url('SanFranciscoDisplay-Medium.woff2') format('woff2'),
-        url('SanFranciscoDisplay-Medium.woff') format('woff');
-    font-weight: 500;
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'SFD-Bold';
-    src: url('SanFranciscoDisplay-Bold.woff2') format('woff2'),
-        url('SanFranciscoDisplay-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
 :root {
-    --hover-color: #4db2ec;
+    --white-color: #ffffff;
+    --black-color: #000000;
 }
 
 ul {
@@ -99,7 +92,7 @@ ul {
 }
 
 body {
-    font-family: 'SFD-Medium', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: #222222;
@@ -114,5 +107,5 @@ a {
 h3,
 h2,
 h1 {
-    font-family: 'SFD-Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
