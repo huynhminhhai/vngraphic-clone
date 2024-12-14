@@ -601,6 +601,22 @@
         display: block;
     }
 
+    .header .right .hr-ver {
+        display: none;
+    }
+
+    .header.active .right .user {
+        display: none;
+    }
+
+    .header .right {
+        gap: 32px;
+    }
+
+    .header.active .right {
+        gap: 12px;
+    }
+
     /**
     * GETLINK
     */
@@ -629,4 +645,9 @@
     .getlink .extensions label img {
         margin-bottom: 6px;
     }
+
+    /**
+    * FOOTER
+    */
+    
 }

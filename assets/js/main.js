@@ -10,6 +10,7 @@ $(document).ready(function () {
 
     $('#toggle-nav-mb').click(function() {
         $('#navbar-wrapper').toggleClass('active-mb')
+        $('.header').toggleClass('active')
     })
 
     if ($(window).width() < 576) {
