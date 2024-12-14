@@ -20,7 +20,7 @@
 <body>
     <main>
         <div class="wrapper" id="wrapper">
-            <div class="navbar-wrapper active" id="navbar-wrapper">
+            <div class="navbar-wrapper" id="navbar-wrapper">
                 <a href="/index.html" class="navbar-logo">
                     <div class="icon">
                         <img src="./assets/images/anhdep.png" alt="Logo">
@@ -175,7 +175,412 @@
                 </div>
             </div>
             <div class="content-wrapper" id="content-wrapper">
-                content
+                <nav class="header">
+                    <div class="left">
+                        <div class="text">
+                            Thuật toán chặn quảng cáo của CỐC CỐC bị lỗi. Hãy tắt chặn quảng cáo CỐC CỐC !!!
+                        </div>
+                        <div class="logo">
+                            <img src="./assets/images/brand_name2.png" alt="brand name">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="badge-counter">
+                            <div class="icon">
+                                <img src="./assets/images/coin.svg" alt="badge counter">
+                            </div>
+                            <div class="number">12</div>
+                        </a>
+                        <div class="hr-ver"></div>
+                        <!-- <div class="dropdown">
+                            <div class="user dropdown-toggle" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn-user">
+                                
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div> -->
+
+                        <div class="dropdown">
+                            <div class="user dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="name">Khách</div>
+                                <div class="avatar">
+                                    <img src="./assets/images/avatar.svg" alt="avatar">
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/user.svg" alt="Đăng nhập">
+                                        </span>
+                                        <span class="text">
+                                            Đăng nhập
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/user.svg" alt="Tài khoản">
+                                        </span>
+                                        <span class="text">
+                                            Tài khoản
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/download-grey.svg" alt="Lịch sử tải ảnh">
+                                        </span>
+                                        <span class="text">
+                                            Lịch sử tải ảnh
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/payment-grey.svg" alt="Lịch sử thanh toán">
+                                        </span>
+                                        <span class="text">
+                                            Lịch sử thanh toán
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon">
+                                            <img src="./assets/images/logout-grey.svg" alt="Lịch sử thanh toán">
+                                        </span>
+                                        <span class="text">
+                                            Đăng xuất
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+                <section class="feature">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-xl-8 col-lg-7">
+                                <div class="getlink">
+                                    <div class="card">
+                                        <div class="card-header py-3">
+                                            <h6 class="section-heading">Getlink UI8.net giá siêu rẻ chỉ 50.000 đồng</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label for="link">Dán link UI8.net vào ô bên dưới và nhấn nút getlink:</label>
+                                                <textarea class="form-control" name="link" id="link" rows="5"></textarea>
+                                            </div>
+                                            <div class="form-group button-group">
+                                                <button class="btn btn-lg btn-outline-info btn-getlink">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/settings.svg" alt="get link">
+                                                    </span>
+                                                    <span class="text">
+                                                        GETLINK
+                                                    </span>
+                                                </button>
+
+                                                <button class="btn btn-lg btn-outline-warning btn-reset">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/reset.svg" alt="reset">
+                                                    </span>
+                                                    <span class="text">
+                                                        RESET
+                                                    </span>
+                                                </button>
+                                            </div>
+
+                                            <div class="flashmessage" id="flashmessage">
+                                                <div class="alert m-alert--outline alert-warning">
+                                                    <strong>Opp!</strong>
+                                                    Vui lòng nhập link từng items của UI8.net
+                                                    <button type="button" class="close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="m-alert m-alert--outline alert alert-danger">
+                                                    <strong>Oops!</strong> Host tạm bảo trì để nâng cấp
+                                                    <button type="button" class="close">
+                                                      <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div id="loadingbar" class="form-group"> 
+                                                <h4 class="small font-weight-bold">
+                                                    <span id="title_loadingbar">Đang lấy link download</span>
+                                                    <span id="percent_loadingbar" class="float-right">0%</span>
+                                                </h4>
+                                                <div class="progress mb-4">
+                                                <div id="style_loadingbar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="downloadFile" id="downloadFile">
+                                                <div class="separator"></div>
+                                                <div class="wrap">
+                                                    <div class="filename">example-image.jpg</div>
+                                                    <a class="btn btn-success button-download" href="./assets/images/example.jpg" download>
+                                                        <span class="icon">
+                                                            <img src="./assets/images/download.svg" alt="download">
+                                                        </span>
+                                                        <span class="text">DOWNLOAD</span>
+                                                    </a>
+                                                </div>
+                                                <div class="separator"></div>
+                                            </div>
+
+                                            <div class="separator"></div>
+
+                                            <div class="form-group">
+                                                <label>
+                                                    Định dạng hỗ trợ: 
+                                                    <img class="extension" src="./assets/images/zip.png" alt="zip">
+                                                    <img class="extension" src="./assets/images/svg.png" alt="svg">
+                                                    <img class="extension" src="./assets/images/png.png" alt="png">
+                                                    <img class="extension" src="./assets/images/ai.png" alt="ai">
+                                                    <img class="extension" src="./assets/images/eps.png" alt="eps">
+                                                    <img class="extension" src="./assets/images/psd.png" alt="psd">
+                                                    <img class="extension" src="./assets/images/avi.png" alt="avi">
+                                                    <img class="extension" src="./assets/images/mov.png" alt="mov">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4 col-lg-5">
+                                <div class="coupon">
+                                    <div class="card">
+                                        <div class="card-header py-3">
+                                            <h6 class="section-heading">Khuyến mãi đang diễn ra</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="coupon-list">
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                Tài khoản CAPCUT PRO
+                                                            </span>
+                                                            <span class="tag">Siêu rẻ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                179K
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                Nâng cấp ChatGPT PLUS GPT-4
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                339k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                Bản quyền ADOBE FULL APP 14 ngày
+                                                            </span>
+                                                            <span class="tag">Siêu rẻ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                68k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                Bản quyền OFFICE 365 + 1TB Onedrive
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                279k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                CANVA PRO 1 THÁNG
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                39k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                GOOGLE ONE 400GB 1 năm
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                399k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                NETFLIX Premium 4K
+                                                            </span>
+                                                            <span class="tag">Slot</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                79k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                YOUTUBE Premium 1 năm
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                459k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                SPOTIFY Premium 6 tháng
+                                                            </span>
+                                                            <span class="tag">Chính chủ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                199k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a target="_blank" href="https://vnpremium.com/product/capcut-pro-gia-re-1-nam-1-thiet-bi">
+                                                        <h6 class="section-heading">
+                                                            <span>
+                                                                <img src="./assets/images/heart.svg" alt="heart">
+                                                                PREMIUMBEAT
+                                                            </span>
+                                                            <span class="tag">Siêu rẻ</span>
+                                                            <span class="badge-cost">
+                                                                <img src="./assets/images/down-white.svg" alt="down">
+                                                                120k
+                                                            </span>
+                                                        </h6>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="keyword">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header py-3">
+                                        <h6 class="section-heading">Từ khóa tìm kiếm</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="tags">
+                                            <li>
+                                                <a href="#tai-hinh-ui8.net" class="tag">tai hinh ui8.net</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#tai-hinh-ui8.net" class="tag">tải hình ui8.net</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#tai-hinh-ui8.net" class="tag">get hình ui8.net</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="wrap">
+                        <div class="top">
+                            <a class="policy" href="#">
+                                Chính sách bảo mật
+                            </a>
+                            <div class="hotline">
+                               | Hotline: 084.800.0000
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span class="copyright">
+                                Copyright © 2024
+                            </span>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </main>
