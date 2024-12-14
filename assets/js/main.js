@@ -8,6 +8,15 @@ $(document).ready(function () {
         $('#navbar-wrapper').toggleClass('active')
     })
 
+    $('#toggle-nav-mb').click(function() {
+        $('#navbar-wrapper').toggleClass('active-mb')
+    })
+
+    if ($(window).width() < 576) {
+        $('#navbar-wrapper').addClass('active')
+        $('#navbar-wrapper').addClass('active-mb')
+    }
+
     /**
     * ALERT
     */

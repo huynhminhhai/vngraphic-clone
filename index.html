@@ -29,7 +29,7 @@
                 </a>
                 <hr>
                 <div class="navbar-heading">Getlink</div>
-                <ul class="navbar-list getlink">
+                <ul class="navbar-list getlinks">
                     <li class="navbar-item">
                         <a href="#" class="navbar-link">
                             <div class="icon">
@@ -180,6 +180,11 @@
                         <div class="text">
                             Thuật toán chặn quảng cáo của CỐC CỐC bị lỗi. Hãy tắt chặn quảng cáo CỐC CỐC !!!
                         </div>
+                        <div class="toggle-nav-mb" id="toggle-nav-mb">
+                            <div class="icon">
+                                <img src="./assets/images/menu-primary.svg" alt="toggle sidebar">
+                            </div>
+                        </div>
                         <div class="logo">
                             <img src="./assets/images/brand_name2.png" alt="brand name">
                         </div>
@@ -281,6 +286,28 @@
                                                 <label for="link">Dán link UI8.net vào ô bên dưới và nhấn nút getlink:</label>
                                                 <textarea class="form-control" name="link" id="link" rows="5"></textarea>
                                             </div>
+
+                                            <div class="form-group mb-0 text-center">
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="typeDownload" value="HD" checked="">
+                                                  <label class="form-check-label">
+                                                    HD 130xu     
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="typeDownload" value="4K">
+                                                  <label class="form-check-label">
+                                                    4K 200xu     
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="typeDownload" value="SELECTHD">
+                                                  <label class="form-check-label">
+                                                    HDSelect 250xu     
+                                                  </label>
+                                                </div>
+                                            </div>
+
                                             <div class="form-group button-group">
                                                 <button class="btn btn-lg btn-outline-info btn-getlink">
                                                     <span class="icon">
@@ -344,7 +371,7 @@
 
                                             <div class="separator"></div>
 
-                                            <div class="form-group">
+                                            <div class="form-group extensions">
                                                 <label>
                                                     Định dạng hỗ trợ: 
                                                     <img class="extension" src="./assets/images/zip.png" alt="zip">

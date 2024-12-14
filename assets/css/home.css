@@ -29,6 +29,12 @@
     width: 104px;
 }
 
+.navbar-wrapper.active-mb {
+    width: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
 .navbar-wrapper .navbar-logo {
     display: flex;
     align-items: center;
@@ -192,9 +198,18 @@
 
 .header .left {
     display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .header .left .logo {
+    display: none;
+}
+
+.header .left .toggle-nav-mb {
+    padding: 8px;
+    border-radius: 100%;
+    background-color: rgba(240, 240, 240, .8);
     display: none;
 }
 
@@ -516,4 +531,102 @@
 
 .news .card {
     margin-bottom: 24px;
+}
+
+/**
+* MEDIAS
+*/
+
+/* 1200 */
+
+/* 991 */
+
+@media screen and (max-width: 991px) {
+
+    /**
+    * NAVBAR
+    */
+
+    .navbar-wrapper .toggle-navbar,
+    .navbar-wrapper.active .toggle-navbar {
+        height: 40px;
+    }
+
+    /**
+    * HEADER
+    */
+
+    .header {
+        gap: 24px;
+    }
+
+    .header .right .user .name {
+        display: none;
+    }
+
+    /* COUPON */
+
+    .coupon .section-heading .badge-cost {
+        margin-left: auto;
+    }
+}
+
+/* 768 */
+
+/* 576 */
+
+@media screen and (max-width: 576px) {
+    
+    /**
+    * NAVBAR
+    */
+
+    .navbar-wrapper .toggle-navbar, .navbar-wrapper.active .toggle-navbar {
+        display: none;
+    }
+    
+    /**
+    * HEADER
+    */
+
+    .header .left .text {
+        display: none;
+    }
+
+    .header .left .logo {
+        display: block;
+    }
+
+    .header .left .toggle-nav-mb {
+        display: block;
+    }
+
+    /**
+    * GETLINK
+    */
+
+    .feature .col-12:first-child {
+        margin-bottom: 36px;
+    }
+
+    .getlink label {
+        text-align: center;
+    }
+
+    .getlink .button-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .getlink .button-group button {
+        width: 100%;
+    }
+
+    .getlink .extensions label {
+        text-align: start;
+    }
+
+    .getlink .extensions label img {
+        margin-bottom: 6px;
+    }
 }
