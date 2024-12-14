@@ -183,6 +183,8 @@
 
 .content-wrapper {
     flex: 1;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -433,7 +435,6 @@
     position: relative;
     margin: 0 10px 10px 0;
     text-decoration: none;
-    -webkit-transition: color 0.2s;
 }
 
 .keyword .tags .tag:hover {
@@ -532,6 +533,19 @@
 
 .news .card {
     margin-bottom: 24px;
+}
+
+/**
+* SUPPORT
+*/
+
+.support .btn img {
+    width: 18px;
+    height: auto;
+}
+
+.support .btn-info {
+    margin-inline: auto;
 }
 
 /**
