@@ -69,4 +69,16 @@ $(document).ready(function () {
 
     // Ẩn loading bar khi khởi tạo
     $("#loadingbar").hide();
+
+    /**
+    * MOMO 
+    */
+
+    $('#btn-upgrade-momo').click(function() {
+        $('#thongbao').fadeToggle()
+    })
+
+    $('#btn-coupon').click(function() {
+        $('#thongbao-coupon').fadeToggle()
+    })
 });
