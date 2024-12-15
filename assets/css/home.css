@@ -623,6 +623,48 @@
 }
 
 /**
+* PROFILE
+*/
+
+.profile .name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:first-child label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:first-child input {
+    outline: none;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:first-child select {
+    font-size: 14px;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 24px;
+}
+
+.payment-history .dataTables_wrapper .dt-layout-row:last-child button {
+    background-color: transparent;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+/**
 * MEDIAS
 */
 
@@ -745,5 +787,23 @@
     /**
     * FOOTER
     */
+
+    /**
+    * PROFILE
+    */
+
+    .payment-history .dataTables_wrapper .dt-layout-row:first-child {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .payment-history .dataTables_wrapper .dt-layout-row:last-child {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .payment-history .dataTables_wrapper .dt-layout-row:first-child input {
+        margin-left: 12px;
+    }
 
 }

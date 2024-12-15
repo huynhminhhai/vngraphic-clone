@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     /**
     * NAVBAR
-    */ 
+    */
 
-    $('#toggle-navbar').click(function() {
+    $('#toggle-navbar').click(function () {
         $('#navbar-wrapper').toggleClass('active')
     })
 
-    $('#toggle-nav-mb').click(function() {
+    $('#toggle-nav-mb').click(function () {
         $('#navbar-wrapper').toggleClass('active-mb')
         $('.header').toggleClass('active')
     })
@@ -22,7 +22,7 @@ $(document).ready(function () {
     * ALERT
     */
 
-    $('.alert .close').click(function() {
+    $('.alert .close').click(function () {
         $(this).parent().fadeToggle()
     })
 
@@ -74,11 +74,27 @@ $(document).ready(function () {
     * MOMO 
     */
 
-    $('#btn-upgrade-momo').click(function() {
+    $('#btn-upgrade-momo').click(function () {
         $('#thongbao').fadeToggle()
     })
 
-    $('#btn-coupon').click(function() {
+    $('#btn-coupon').click(function () {
         $('#thongbao-coupon').fadeToggle()
     })
+
+    /**
+    * DATATABLE 
+    */
+
+    $('#thanh-toan-table').DataTable({
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
+        }
+    });
+
+    $('#download-table').DataTable({
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
+        }
+    });
 });
