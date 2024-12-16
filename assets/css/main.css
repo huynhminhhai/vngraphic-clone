@@ -427,6 +427,7 @@ form.user .btn-user img {
     font-size: 12px;
     line-height: 20px;
     padding-inline: 48px;
+    padding-bottom: 24px;
 }
 
 .copyright .policy {

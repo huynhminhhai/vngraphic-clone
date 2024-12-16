@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Tạo tài khoản</title>
     <link rel="icon" type="image/png" href="./assets/images/anhdep.png">
 
     <!-- library -->
@@ -20,75 +20,86 @@
 
 <body class="bg-gradient-primary">
     <main>
-        <section class="login">
+        <section class="login forgot-password">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-10 col-lg-12 col-md-9">
+                    <div class="col-xl-6 col-lg-12 col-md-9">
                         <div class="card o-hidden border-0 shadow-lg my-5">
                             <div class="card-body p-0">
                                 <div class="row">
-                                    <div class="col-lg-6 d-none d-lg-block">
-                                        <div class="login-banner">
-                                            <img src="./assets/images/zanstock.jpg" alt="login">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-12">
                                         <div class="login-group">
                                             <div class="login-wrap">
                                                 <a href="/index.html" class="logo">
-                                                    <img src="./assets/images/logo_200.png" alt="Logo">
+                                                    <img src="./assets/images/anhdep-1.png" alt="Logo">
                                                 </a>
                                                 <h4 class="title-form">
-                                                    Đăng nhập
+                                                    Tạo tài khoản
                                                 </h4>
                                                 <div class="login-form">
-                                                    <div class="alert alert-danger text-left" role="alert">Tài khoản hoặc mật khẩu không đúng</div>
-                                                    <form action="#" id="login-form" class="user">
+                                                    <div class="alert alert-danger text-left" role="alert">Nội dung lỗi</div>
+                                                    <form action="#" id="signup-form" class="user">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control form-control-user"
+                                                                placeholder="Tên hiển thị" name="name" required="">
+                                                        </div>
                                                         <div class="form-group">
                                                             <input type="email" class="form-control form-control-user"
-                                                                placeholder="Nhập email của bạn" name="email" required>
+                                                                placeholder="Địa chỉ email" name="email" required="">
                                                         </div>
-                                                        <div class="form-group">
-                                                            <input type="password" class="form-control form-control-user"
-                                                                placeholder="Nhập mật khẩu" name="password" required="">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="custom-control custom-checkbox small">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="customCheck">
-                                                                <label class="custom-control-label" for="customCheck">Ghi
-                                                                    nhớ</label>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                                <input type="password"
+                                                                    class="form-control form-control-user"
+                                                                    placeholder="Mật khẩu" name="password" required="">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="password"
+                                                                    class="form-control form-control-user"
+                                                                    placeholder="Nhập lại mật khẩu" name="password2"
+                                                                    required="">
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <button type="submit" id="btn-login"
-                                                                class="btn btn-primary btn-user btn-block">Đăng
-                                                                nhập</button>
+                                                            <div class="form-group mb-3 d-flex justify-content-center">
+                                                                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-user btn-block">ĐĂNG
+                                                                KÝ</button>
                                                         </div>
                                                         <hr>
-                                                        <a href="/auth/google" class="btn btn-google btn-user btn-block">
-                                                            <img src="./assets/images/google.svg" alt=" login with google"> Đăng nhập bằng Google
+                                                        <a href="/auth/google"
+                                                            class="btn btn-google btn-user btn-block">
+                                                            <img src="./assets/images/google.svg"
+                                                                alt=" login with google"> Đăng nhập bằng Google
                                                         </a>
                                                         <a href="/auth/facebook"
                                                             class="btn btn-facebook btn-user btn-block">
-                                                            <img src="./assets/images/facebook.svg" alt="login with facebook"> Đăng nhập bằng Facebook
+                                                            <img src="./assets/images/facebook.svg"
+                                                                alt="login with facebook"> Đăng nhập bằng Facebook
                                                         </a>
                                                     </form>
                                                     <hr>
                                                     <div class="text-center">
-                                                        <a class="small" href="/forgot-password.html">Quên mật khẩu ?</a>
+                                                        <a class="small" href="/forgot-password">Quên mật khẩu?</a>
                                                     </div>
                                                     <div class="text-center">
-                                                        <a class="small" href="/signup.html">Tạo tài khoản !</a>
+                                                        <a class="small" href="/login">Đăng nhập !</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="copyright text-center my-auto">
                                                 <span class="policy">
-                                                    <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a> | Hotline: 058.789.6799
+                                                    <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a> | Hotline:
+                                                    058.789.6799
                                                 </span>
                                                 <br>
-                                                <span class="copyright-text">Copyright © VNGraphic.com (CAP THOAT NUOC CAN THO) 2020 - 2023 </span>
+                                                <span class="copyright-text">Copyright © VNGraphic.com (CAP THOAT NUOC
+                                                    CAN THO) 2020 - 2023 </span>
                                             </div>
                                         </div>
                                     </div>
