@@ -138,6 +138,39 @@ section {
     background-size: cover;
 }
 
+.supports {
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    z-index: 3;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, .5);
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    z-index: 3;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, .5);
+    line-height: 46px;
+    bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .blur {
     position: fixed;
     width: 100%;

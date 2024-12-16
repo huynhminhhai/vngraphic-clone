@@ -71,6 +71,14 @@ $(document).ready(function () {
     $("#loadingbar").hide();
 
     /**
+    * RESET LINK 
+    */ 
+
+    $('.btn-reset').click(function() {
+        $('#link').val('')
+    })
+
+    /**
     * MOMO 
     */
 
@@ -125,4 +133,26 @@ $(document).ready(function () {
     $('.logout-confirm .button-confirm').on('click', function() {
         window.location.href = '/login.html'
     })
+
+    /**
+    * SCROLL TO TOP 
+    */ 
+
+    // Ẩn nút "Scroll to Top" khi tải trang
+    $('.scroll-to-top').hide();
+
+    // Hiển thị nút khi người dùng cuộn xuống một khoảng
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) { // Nếu cuộn xuống > 200px
+            $('.scroll-to-top').fadeIn(); // Hiển thị nút
+        } else {
+            $('.scroll-to-top').fadeOut(); // Ẩn nút
+        }
+    });
+
+    // Logic cuộn lên đầu trang khi click vào nút
+    $('.scroll-to-top').on('click', function (e) {
+        e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+        $('html, body').animate({ scrollTop: 0 }, 600); // Cuộn mượt lên đầu trang trong 600ms
+    });
 });
