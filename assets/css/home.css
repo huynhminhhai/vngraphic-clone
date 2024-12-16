@@ -665,6 +665,19 @@
 }
 
 /**
+* POLICY
+*/
+
+.policy .card-body {
+    padding-bottom: 60px;
+}
+
+.policy .card-body strong {
+    margin-block: 12px 6px;
+    display: inline-block;
+}
+
+/**
 * MEDIAS
 */
 
