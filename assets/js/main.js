@@ -86,15 +86,25 @@ $(document).ready(function () {
     * DATATABLE 
     */
 
-    $('#thanh-toan-table').DataTable({
-        language: {
-            url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
-        }
-    });
+    if ($('#thanh-toan-table').length > 0) {
 
-    $('#download-table').DataTable({
-        language: {
-            url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
-        }
-    });
+        console.log(123)
+        $('#thanh-toan-table').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
+            }
+        });
+    }
+
+    if ($('#download-table').length > 0) {
+        $('#download-table').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
+            }
+        });
+    }
+
+    /**
+    * FORM 
+    */ 
 });

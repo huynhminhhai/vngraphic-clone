@@ -678,6 +678,44 @@
 }
 
 /**
+* LOGIN
+*/
+
+.login .login-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.login .login-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.login .login-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 48px 48px 24px;
+}
+
+.title-form {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.login .login-form {
+    width: 100%;
+}
+
+.login .form-group {
+    margin-bottom: 16px;
+}
+
+/**
 * MEDIAS
 */
 
@@ -718,6 +756,18 @@
 
     .momodiv .g-recaptcha {
         transform: scale(1);
+    }
+
+    /**
+    * LOGIN
+    */
+
+    .login .login-wrap {
+        padding: 48px;
+    }
+
+    .copyright {
+        padding-bottom: 48px;
     }
 }
 
@@ -817,6 +867,19 @@
 
     .payment-history .dataTables_wrapper .dt-layout-row:first-child input {
         margin-left: 12px;
+    }
+
+    /**
+    * LOGIN
+    */
+
+    .login .login-wrap {
+        padding: 24px;
+    }
+
+    .copyright {
+        padding-bottom: 24px;
+        padding-inline: 24px;
     }
 
 }
