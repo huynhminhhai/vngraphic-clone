@@ -87,8 +87,6 @@ $(document).ready(function () {
     */
 
     if ($('#thanh-toan-table').length > 0) {
-
-        console.log(123)
         $('#thanh-toan-table').DataTable({
             language: {
                 url: 'https://cdn.datatables.net/plug-ins/1.13.5/i18n/vi.json'
@@ -106,5 +104,25 @@ $(document).ready(function () {
 
     /**
     * FORM 
-    */ 
+    */
+
+    /**
+    * LOGOUT 
+    */
+
+    $('.dropdown-item[href="#logout"]').on('click', function (e) {
+        e.preventDefault();
+        
+        $('.logout-confirm').fadeToggle()
+        $('.blur').addClass('active')
+    });
+
+    $('.logout-confirm .button-close').on('click', function() {
+        $('.logout-confirm').fadeToggle()
+        $('.blur').removeClass('active')
+    })
+
+    $('.logout-confirm .button-confirm').on('click', function() {
+        window.location.href = '/login.html'
+    })
 });

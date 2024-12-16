@@ -20,6 +20,24 @@
 
 <body>
     <main>
+        <div class="blur"></div>
+        <div class="modal logout-confirm" tabindex="-1" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Bạn có chắc muốn đăng xuất?</h5>
+                  <button type="button" class="btn-close button-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Vui lòng nhấn đồng ý nếu bạn muốn đăng xuất khỏi hệ thống</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary button-close">Hủy</button>
+                  <button type="button" class="btn btn-primary button-confirm">Đồng ý</button>
+                </div>
+              </div>
+            </div>
+        </div>
         <div class="wrapper" id="wrapper">
             <div class="navbar-wrapper" id="navbar-wrapper">
                 <a href="/index.html" class="navbar-logo">
@@ -191,7 +209,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <a href="#" class="badge-counter">
+                        <a href="/upgrade.html" class="badge-counter">
                             <div class="icon">
                                 <img src="./assets/images/coin.svg" alt="badge counter">
                             </div>
@@ -253,7 +271,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#logout">
                                         <span class="icon">
                                             <img src="./assets/images/logout-grey.svg" alt="Lịch sử thanh toán">
                                         </span>
